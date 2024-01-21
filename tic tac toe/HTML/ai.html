@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>TIC TAC TOE - VS.AI</title>
+     <link rel="stylesheet" href="/CSS/styles.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+     <div class="cursor-dot"></div>     
+     <section class="play-section">
+          <div class="d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-sm d-flex justify-content-center align-items-center">
+                              <div>
+                                   <div class="d-flex">
+                                        <div class="square" square-index="0"></div>
+                                        <div class="square" square-index="1"></div>
+                                        <div class="square" square-index="2"></div>
+                                   </div>
+                                   <div class="d-flex">
+                                        <div class="square" square-index="3"></div>
+                                        <div class="square" square-index="4"></div>
+                                        <div class="square" square-index="5"></div>
+                                   </div>
+                                   <div class="d-flex">
+                                        <div class="square bottom-row" square-index="6"></div>
+                                        <div class="square bottom-row" square-index="7"></div>
+                                        <div class="square bottom-row" square-index="8"></div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-sm d-flex align-items-center score">
+                              <div class="w-100">
+                                   <div class="d-flex align-items-center justify-content-evenly">
+                                        <div class="winning text-center text-light">
+                                             <small><b>Player X</b></small>
+                                             <p>0</p>
+                                        </div>
+                                        <div class="winning text-center text-light">
+                                             <small><b>Draw</b></small>
+                                             <p>0</p>
+                                        </div>
+                                        <div class="winning text-center text-light">
+                                             <small><b>Player O</b></small>
+                                             <p>0</p>
+                                        </div>
+                                   </div>
+                                   <div class="d-flex align-items-center justify-content-evenly">
+                                        <button class="btn btn-warning" id="reset-game">Reset Game</button>
+                                        <button class="btn btn-info" id="reset-streak">Reset Streak</button>
+                                        <a href="/index.html" class="btn btn-success" id="reset-mode">Reset Mode</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="abouts text-center" style="margin-top: 70px;">
+          <small class="text-light">
+               A website by <a href="https://tharunvemula-portfolio.netlify.app/" target="_blank"><b>Tharun Vemula</b></a>
+          </small>
+     </section>
+     <script src="/JS/ai.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+body {
+     background-color: #2d2d2d !important;
+}
+.cursor-dot {
+     width: 15px;
+     height: 15px;
+     background-color: #0088ff;
+     border-radius: 50%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transform: translate(-50%, -50%);
+     z-index: 999;
+     pointer-events: none;
+}
+.cursor-dot-x {
+     font-size: 40px;
+     font-weight: bold;
+     border-radius: 50%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transform: translate(-50%, -50%);
+     z-index: 999;
+     pointer-events: none;
+}
+.cursor-dot-o {
+     font-size: 40px;
+     font-weight: bold;
+     border-radius: 50%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transform: translate(-50%, -50%);
+     z-index: 999;
+     pointer-events: none;
+}
+.play-section {
+     padding-top: 7%;
+}
+.game-selection {
+     margin-top: 3%;
+}
+.game-selection img {
+     height: 450px;
+     width: 100%;
+     margin: auto;
+}
+.game-selection a {
+     text-decoration: none;
+}
+.game-selection a:hover {
+     text-decoration: underline;
+     padding: 0px 10px;
+}
+.play-section .square {
+     height: 160px;
+     width: 160px;
+     border: 3px solid #2d2d2d;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #ffffff2a;
+     border-radius: 10px;
+}
+.play-section .x { font-size: 100px; }
+.play-section .o { font-size: 100px; }
+
+.play-section .winning p {
+     font-size: 90px;
+     text-align: center;
+}
+
+@media (max-width:600px) {
+     .play-section .square {
+          height: 130px;
+          width: 130px;
+     }
+     .play-section .x { font-size: 70px; }
+     .play-section .o { font-size: 70px; }
+}
+@media (max-width:400px) {
+     .play-section {
+          padding-top: 35%;
+     }
+     .play-section .square {
+          height: 90px;
+          width: 90px;
+     }
+     .play-section .x { font-size: 60px; }
+     .play-section .o { font-size: 60px; }
+}
